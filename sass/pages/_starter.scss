@@ -1,0 +1,27 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: 1px dashed $gold-color;
+    outline-offset: 2px;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: "Open Sans";
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    color: #fff;
+    background-color: $black-color;
+}
