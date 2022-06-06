@@ -7,6 +7,12 @@
     margin-right: auto;
 }
 
+@mixin titles($weight) {
+    font-family: "Open Sans Condensed", "Arial", sans-serif;
+    font-weight: $weight;
+    color: $white-color;
+}
+
 
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {
