@@ -1,0 +1,89 @@
+.site-footer {
+    &__inner {
+        @include container;
+        margin-bottom: 8rem;
+    }
+    &__title {
+        @include main-title;
+    }
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 8rem;
+        @include respond(big-tables) {
+            flex-direction: column-reverse;
+        }
+    }
+    .site-footer__main-left {
+        width: 100%;
+        max-width: 300px;
+        margin-right: 4rem;
+        display: flex;
+        flex-direction: column;
+        @include respond(big-tables) {
+            width: 100%;
+            max-width: 730px;
+            flex-direction: row;
+            justify-content: space-between;
+            margin-right: 0;
+        }
+        div {
+            @include respond(big-tables) {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    }
+    .site-footer__main-left-info {
+        margin-bottom: 1rem;
+    }
+    &__form {
+        width: 100%;
+        max-width: 730px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-rows: repeat(auto-fit, 40px);
+        row-gap: 3rem;
+        column-gap: 3rem;
+        @include respond(big-tables) {
+            margin-bottom: 7rem;
+        }
+        @include respond(phone) {
+            grid-template-columns: repeat(2, minmax(100px, 1fr));
+            grid-template-rows: repeat(auto-fit, 40px);
+        }
+    }
+    .site-footer__form input {
+        padding: 1.5rem;
+        outline: none;
+    }
+    .site-footer__form textarea:nth-child(3) {
+        grid-area: 1/3/3/4;
+        resize: none;
+        padding: 1.5rem;
+        outline: none;
+        @include respond(phone) {
+            grid-area: 3/1/6/3;
+        }
+    }
+    .site-footer__form button {
+        @include titles(700);
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+        letter-spacing: 0.18rem;
+        cursor: pointer;
+        background-color: $gold-color;
+        text-transform: uppercase;
+        display: inline-block;
+        border: none;
+        outline: none;
+        grid-row: 3/4;
+        grid-column: 2/3;
+        padding: 1.2rem 0;
+        @include respond(phone) {
+            grid-row: 6/7;
+            grid-column: 2/3;
+        }
+    }
+}
