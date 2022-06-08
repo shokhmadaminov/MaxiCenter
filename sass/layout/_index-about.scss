@@ -1,0 +1,41 @@
+.index-about {
+    @include container;
+    margin-bottom: 10rem;
+    .index-about__title {
+        @include main-title;
+    }
+    .index-about__inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .inner-about__inner-text-wrapper {
+        width: 50%;
+        margin-right: 5rem;
+        @include respond(big-tables) {
+            width: 100%;
+            max-width: 600px;
+            margin-right: 0;
+            text-align: center
+        }
+    }
+    .index-about__inner-title {
+        @include titles(700);
+        text-transform: uppercase;
+        margin-bottom: 4rem;
+    }
+    .inner-about__inner-img-div {
+        overflow: hidden;
+        @include respond(big-tables) {
+            display: none;
+        }
+    }
+    .inner-about__inner-img {
+        display: block;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
