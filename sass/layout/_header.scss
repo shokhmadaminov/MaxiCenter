@@ -13,6 +13,13 @@
         padding-left: 0;
     }
 }
+.kompaniya-header {
+    background-image: linear-gradient(rgba(51, 51, 51, 0.8) 100%, rgba(51, 51, 51, 0.8) 100%), url("../images/jpg/sklad-2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
 
 .site-header__container {
     @include container;

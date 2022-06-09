@@ -1,0 +1,40 @@
+.about-cards {
+    padding: 4rem 0 10rem;
+    &__list {
+        @include container;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-rows: repeat(autofit, minmax(250px));
+        row-gap: 2rem;
+        column-gap: 3rem;
+        @include respond(desktop) {
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        }
+        @include respond(big-tables) {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        @include respond(phone) {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+    }
+    &__item {
+        padding: 4rem 2rem;
+        border-radius: 17px;
+        background: #333333;
+        box-shadow:  20px 20px 60px #2b2b2b,
+        -20px -20px 60px #3b3b3b;
+        text-align: center;
+        &:hover {
+            border-radius: 13px;
+            background: #333333;
+            box-shadow:  5px 5px 10px #2b2b2b,
+            -5px -5px 10px #3b3b3b;
+        }
+    }
+    &__number {
+        @include titles(700);
+        font-size: 4rem;
+        margin-bottom: 5rem;
+    }
+}
