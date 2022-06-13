@@ -37,13 +37,8 @@
             flex-direction: column;
             border-radius: 10px;
         }
-        .site-main-inner-list__item:hover{
-            box-shadow:  1.3rem 1.3rem 1.3rem rgb(140, 140, 140);
-            transform: scale(1.01);
-        }
         .site-main-inner-list__item:hover img {
             transform: scale(1.1);
-            opacity: 0.7;
         }
     }
     .site-main-inner-list-item__title{
@@ -58,7 +53,7 @@
     .site-main-list-item-img-div{
         overflow: hidden;
         margin-bottom: 2rem;
-        flex-grow: 1;
+        // flex-grow: 1;
     }
     .site-main-inner-list-item__img{
         width: 100%;
