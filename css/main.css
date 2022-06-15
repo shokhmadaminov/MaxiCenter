@@ -59,6 +59,24 @@
   position: relative;
 }
 
+.uslugi-header {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(51, 51, 51, 0.8)), to(rgba(51, 51, 51, 0.8))), url("../images/jpg/uslugi-header.jpg");
+  background-image: linear-gradient(rgba(51, 51, 51, 0.8) 100%, rgba(51, 51, 51, 0.8) 100%), url("../images/jpg/uslugi-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.contact-header {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(100%, rgba(51, 51, 51, 0.8)), to(rgba(51, 51, 51, 0.8))), url("../images/jpg/contact-header.jpg");
+  background-image: linear-gradient(rgba(51, 51, 51, 0.8) 100%, rgba(51, 51, 51, 0.8) 100%), url("../images/jpg/contact-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
 .site-header__container {
   width: 100%;
   max-width: 1200px;
@@ -832,6 +850,8 @@ a svg path {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: left;
+     object-position: left;
 }
 
 .contact-info__inner {

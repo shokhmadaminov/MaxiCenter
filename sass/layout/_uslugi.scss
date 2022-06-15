@@ -53,12 +53,12 @@
     .site-main-list-item-img-div{
         overflow: hidden;
         margin-bottom: 2rem;
-        // flex-grow: 1;
     }
     .site-main-inner-list-item__img{
         width: 100%;
         transition: all 0.5s linear;
         display: block;
         object-fit: cover;
+        object-position: left;
     }
 }
